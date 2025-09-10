@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 11 General Mathematics | Q2 Curriculum Plan</title>
+    <style>
+        /* --- General Styles --- */
+        :root {
+            --primary-color: #005A9C; /* A professional blue */
+            --secondary-color: #003366; /* Darker blue for accents */
+            --light-gray: #f4f7fa;
+            --medium-gray: #e1e8ed;
+            --dark-gray: #4a4a4a;
+            --text-color: #333;
+            --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* --- Sidebar Navigation --- */
+        .sidebar {
+            width: 280px;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+
+        .sidebar h1 {
+            font-size: 1.4em;
+            margin: 0 0 10px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        .sidebar h2 {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+            color: var(--medium-gray);
+        }
+
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        
+        .sidebar nav ul ul {
+            padding-left: 20px;
+        }
+
+        .sidebar nav li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: background-color 0.2s ease, padding-left 0.2s ease;
+        }
+
+        .sidebar nav li a:hover {
+            background-color: var(--primary-color);
+            padding-left: 20px;
+        }
+
+        .sidebar nav li a.active {
+            background-color: #0073cc; /* Brighter blue for active */
+            font-weight: bold;
+        }
+
+        /* --- Main Content Area --- */
+        .main-content {
+            flex-grow: 1;
+            padding: 30px 40px;
+            overflow-y: auto;
+        }
+
+        .content-section {
+            display: none; /* Hidden by default */
+        }
+
+        .content-section.active {
+            display: block; /* Shown when active */
+        }
+
+        h3 {
+            font-size: 2.2em;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--medium-gray);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h4 {
+            font-size: 1.6em;
+            color: var(--primary-color);
+            margin-top: 30px;
+        }
+        
+        h5 {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            line-height: 1.6;
+        }
+        
+        strong {
+            color: var(--secondary-color);
+        }
+
+        /* --- Card Styles for Daily Plans --- */
+        .day-card {
+            background-color: #fff;
+            border: 1px solid var(--medium-gray);
+            border-left: 5px solid var(--primary-color);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .day-header {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin: 0 0 15px 0;
+        }
+        
+        .competency-list {
+            font-style: italic;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .activity-step {
+            margin-top: 15px;
+        }
+        
+        /* --- Table Styles for Rubrics --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            border: 1px solid var(--medium-gray);
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+
+        /* --- Utility Classes --- */
+        .materials-box {
+            background-color: #e7f3ff;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h1>GenMath Q2 Plan</h1>
+        <h2>SY 2025-2026</h2>
+        <nav>
+            <ul>
+                <li><a href="#overview" class="nav-link active">Quarter Overview</a></li>
+                <li>
+                    <a>Performance Tasks</a>
+                    <ul>
+                        <li><a href="#pt1" class="nav-link">&raquo; PT #1: Design Phase</a></li>
+                        <li><a href="#pt2" class="nav-link">&raquo; PT #2: Build & Budget</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Weekly Cycles</a>
+                    <ul>
+                        <li><a href="#cycle1" class="nav-link">&raquo; Cycle 1: Measurement</a></li>
+                        <li><a href="#cycle2" class="nav-link">&raquo; Cycle 2: 2D Geometry</a></li>
+                        <li><a href="#cycle3" class="nav-link">&raquo; Cycle 3: 3D Geometry</a></li>
+                        <li><a href="#cycle4" class="nav-link">&raquo; Cycle 4: Trigonometry Intro</a></li>
+                        <li><a href="#cycle5" class="nav-link">&raquo; Cycle 5: Adv. Trigonometry</a></li>
+                        <li><a href="#cycle6" class="nav-link">&raquo; Cycle 6: Finalization</a></li>
+                    </ul>
+                </li>
+                <li><a href="#timeline" class="nav-link">Summary Timeline</a></li>
+                <li><a href="#competencies" class="nav-link">Learning Competencies</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <!-- ====================================================== -->
+        <!-- OVERVIEW SECTION -->
+        <!-- ====================================================== -->
+        <section id="overview" class="content-section active">
+            <h3>Grade 11 General Mathematics | Second Quarter Overview</h3>
+            <p><strong>Subject:</strong> General Mathematics</p>
+            <p><strong>Grade Level:</strong> 11</p>
+            <p><strong>Quarter:</strong> Second Quarter, SY 2025-2026</p>
+            <p><strong>Class Schedule:</strong> 4 sessions per week, 1 hour (60 minutes) per session</p>
+
+            <h4>Performance Standards</h4>
+            <p>By the end of the quarter, the learners are able to present solutions to real-life problems that require measurements and conversions (such as designing a garden, cooking recipes, or building a model). Learners apply trigonometry and geometric concepts to estimate measurements and construct three-dimensional objects, understanding their shapes and volumes for practical uses like product packaging, furniture, and construction.</p>
+            
+            <h4>Performance Tasks Overview</h4>
+            <h5>Performance Task #1: The Green Campus Initiative - Design Phase</h5>
+            <p>In groups of 4-5, students will be assigned a specific, underutilized area of the school campus. Their task is to create a detailed landscape design proposal for this area, focusing on accurate measurement, scaled drawings, and calculations of perimeter and area.</p>
+
+            <h5>Performance Task #2: The Green Campus Initiative - Build & Budget Phase</h5>
+            <p>Continuing from PT #1, the same groups will now turn their design into a practical project plan. This phase focuses on volume, surface area, trigonometry, and creating a detailed budget by researching the real-world costs of materials.</p>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- PERFORMANCE TASK 1 SECTION -->
+        <!-- ====================================================== -->
+        <section id="pt1" class="content-section">
+            <h3>Performance Task #1: The Green Campus Initiative - Design Phase</h3>
+            <p><strong>Total Points:</strong> 30</p>
+            
+            <h4>I. Detailed Instructions for Students</h4>
+            <h5>Project Title: The Green Campus Initiative - Design Phase</h5>
+            <p><strong>Introduction:</strong> Welcome, junior landscape architects! Your group has been selected by the school administration to help beautify our campus. Your task is to create a practical and beautiful design proposal for an underutilized space. This project will test your skills in measurement, geometry, and scale drawing.</p>
+            <p><strong>Your Goal:</strong> To produce a short, professional report that proposes a new landscape design, including a scaled drawing, precise calculations, and a clear justification for your choices.</p>
+            
+            <h5>Step-by-Step Instructions:</h5>
+            <ol>
+                <li><strong>Site Inspection & Measurement (The "Before"):</strong> Visit your assigned site. Accurately measure the overall dimensions and note any existing features. Create a rough sketch with all measurements labeled.</li>
+                <li><strong>Brainstorming & Design (The "Vision"):</strong> As a group, brainstorm how you want to transform the space. Consider function, aesthetics, and elements like lawns, pathways, and flower beds.</li>
+                <li><strong>Creating the Scaled Blueprint (The "Plan"):</strong> On graph paper, create a formal, scaled drawing of your proposed design. State the scale clearly (e.g., 1 cm = 0.5 m). Label everything and include a legend.</li>
+                <li><strong>Mathematical Calculations (The "Proof"):</strong> On a separate sheet, present the following calculations with formulas and step-by-step solutions:
+                    <ul>
+                        <li>Total perimeter and total area of the entire space.</li>
+                        <li>Area of each individual element in your design (e.g., lawn, pathway).</li>
+                        <li>Perimeter/circumference of relevant elements (e.g., border for a flower bed).</li>
+                    </ul>
+                </li>
+                <li><strong>Design Justification (The "Why"):</strong> Write a short paragraph (3-5 sentences) explaining your design choices and how they improve the space.</li>
+                <li><strong>Final Report Assembly:</strong> Compile a neat report with a Title Page, the Scaled Blueprint, the Calculation Sheet, and the Design Justification.</li>
+            </ol>
+
+            <h4>II. Timeline of Activities</h4>
+            <ul>
+                <li><strong>Cycle 2, Day 2:</strong> Task Introduction & Site Inspection.</li>
+                <li><strong>Cycle 2, Day 3:</strong> Measurement & Planning.</li>
+                <li><strong>Cycle 3, Day 3 & 4:</strong> In-Class Work Sessions for design, blueprinting, and calculations.</li>
+                <li><strong>Cycle 4, Day 1:</strong> Finalization & Submission.</li>
+            </ul>
+            
+            <h4>III. Scoring Rubric for Performance Task #1</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Excellent (4)</th>
+                        <th>Good (3)</th>
+                        <th>Satisfactory (2)</th>
+                        <th>Needs Improvement (1)</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Scaled Blueprint</strong></td>
+                        <td>Drawing is neat, uses a ruler, and is easy to read. The scale is clearly stated, appropriate, and applied accurately. All parts are labeled.</td>
+                        <td>Drawing is neat and readable. Scale is stated and mostly accurate. Most parts are labeled.</td>
+                        <td>Drawing is somewhat messy. Scale is stated but has inaccuracies. Some labels are missing.</td>
+                        <td>Drawing is messy, lacks a clear scale, or is significantly inaccurate.</td>
+                        <td>/ 4</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Calculation: Accuracy</strong></td>
+                        <td>All perimeter and area calculations are correct. Formulas are appropriate. Units are correct and consistently used.</td>
+                        <td>Most calculations are correct with only minor errors. Formulas are appropriate. Units are mostly correct.</td>
+                        <td>Several calculations have significant errors. Some incorrect formulas may have been used.</td>
+                        <td>Majority of calculations are incorrect. Wrong formulas are used.</td>
+                        <td>/ 10</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Calculation: Completeness & Clarity</strong></td>
+                        <td>All required calculations are present. All work is shown clearly and is easy to follow.</td>
+                        <td>Almost all required calculations are present. Work is shown and generally easy to follow.</td>
+                        <td>Some required calculations are missing. Work is shown but is disorganized.</td>
+                        <td>Many required calculations are missing. No work is shown.</td>
+                        <td>/ 6</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Design Justification</strong></td>
+                        <td>Justification is clear, thoughtful, and provides specific reasons for the design choices, connecting them to function or aesthetics.</td>
+                        <td>Justification is provided and gives some reasons for the design, but could be more detailed.</td>
+                        <td>Justification is vague, very brief, or does not clearly explain the design choices.</td>
+                        <td>Justification is missing or irrelevant.</td>
+                        <td>/ 4</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Overall Presentation & Collaboration</strong></td>
+                        <td>The final report is professionally assembled and neat. All components are included. Group collaborated effectively.</td>
+                        <td>The report is neat and includes all components. Group worked well together.</td>
+                        <td>The report is disorganized or missing a component. Group collaboration was inconsistent.</td>
+                        <td>The report is messy and incomplete. Little evidence of collaboration.</td>
+                        <td>/ 6</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="text-align:right; font-weight:bold;">TOTAL</td>
+                        <td><strong>/ 30</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- PERFORMANCE TASK 2 SECTION -->
+        <!-- ====================================================== -->
+        <section id="pt2" class="content-section">
+            <h3>Performance Task #2: The Green Campus Initiative - Build & Budget Phase</h3>
+            <p><strong>Total Points:</strong> 32</p>
+
+            <h4>I. Detailed Instructions for Students</h4>
+            <h5>Project Title: The Green Campus Initiative - Build & Budget Phase</h5>
+            <p><strong>Introduction:</strong> Congratulations on completing the design phase! Now it's time to see if your design is practical and affordable. You will calculate materials needed, solve a real-world trigonometry problem, and create a complete budget.</p>
+            <p><strong>Your Goal:</strong> To produce a project folder containing a calculations report and a budget spreadsheet that details the costs and materials required to bring your landscape design to life.</p>
+            
+            <h5>Step-by-Step Instructions:</h5>
+            <ol>
+                <li><strong>Volume Calculations (The "Materials"):</strong> Using your PT#1 design, calculate the volume of materials needed (e.g., cubic meters of soil for a raised garden bed). Show your formula (V = Area of Base × height) and calculations.</li>
+                <li><strong>3D Object Design & Calculations (The "Feature"):</strong> Design one simple 3D object for your space (e.g., a rectangular planter box). Create a sketch with dimensions. Calculate its Surface Area (for painting/finishing) and its Volume/Capacity. Show all formulas and calculations.</li>
+                <li><strong>Trigonometry Application (The "Site Problem"):</strong> Solve one practical trigonometry problem relevant to your site (e.g., calculate the height of a nearby tree). You must measure a distance on the ground and an angle of elevation. Provide a diagram, your measurements, and the full calculation using SOH-CAH-TOA.</li>
+                <li><strong>Creating the Project Budget (The "Cost"):</strong> Using a spreadsheet program, create a detailed budget. Research realistic prices for materials. Your spreadsheet must have columns for: Item, Description/Source, Quantity, Unit Cost, and Total Cost. Include a Grand Total.</li>
+                <li><strong>Final Project Folder Assembly:</strong> Compile everything into a folder containing your Calculations Report and your Budget Spreadsheet.</li>
+            </ol>
+            
+            <h4>II. Timeline of Activities</h4>
+            <ul>
+                <li><strong>Cycle 5, Day 3:</strong> Task Introduction.</li>
+                <li><strong>Cycle 5, Day 4:</strong> In-Class Work Session 1 for calculations and cost research.</li>
+                <li><strong>Cycle 6, Day 1:</strong> Site Check (for trigonometry problem) & Work Session 2.</li>
+                <li><strong>Cycle 6, Day 2:</strong> Finalization of report and budget.</li>
+                <li><strong>Cycle 6, Day 4:</strong> Submission.</li>
+            </ul>
+
+            <h4>III. Scoring Rubric for Performance Task #2</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Excellent (4)</th>
+                        <th>Good (3)</th>
+                        <th>Satisfactory (2)</th>
+                        <th>Needs Improvement (1)</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Volume & Surface Area Calculations</strong></td>
+                        <td>Calculations for material volume and the 3D object's SA/V are present, use correct formulas, and are accurate. Work is shown clearly.</td>
+                        <td>Most calculations are present and accurate with only minor errors. Correct formulas are used. Work is shown.</td>
+                        <td>Some calculations are missing or have significant errors. Incorrect formulas may have been used.</td>
+                        <td>Major calculations are missing or fundamentally incorrect.</td>
+                        <td>/ 10</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trigonometry Problem-Solving</strong></td>
+                        <td>The problem is solved with a clear diagram, accurate measurements, correct use of a trig ratio, and a correct final answer with units.</td>
+                        <td>The problem is solved correctly, but the diagram or work may lack clarity or contain minor measurement errors.</td>
+                        <td>The problem setup has flaws (e.g., incorrect diagram or trig ratio), leading to an incorrect answer.</td>
+                        <td>The problem is not attempted or the method used is completely incorrect.</td>
+                        <td>/ 8</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Project Budget</strong></td>
+                        <td>Spreadsheet is well-organized, complete, and uses realistic, researched prices. Quantities are clearly linked to calculations.</td>
+                        <td>Spreadsheet is complete and most prices are realistic. Minor organizational errors. Quantities are mostly correct.</td>
+                        <td>Spreadsheet is missing key items or uses unrealistic prices. Quantities may not align with calculations.</td>
+                        <td>Spreadsheet is incomplete, disorganized, or contains mostly inaccurate information.</td>
+                        <td>/ 8</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Clarity & Organization</strong></td>
+                        <td>The final report and budget are professionally presented, easy to read, and all required components are included and clearly labeled.</td>
+                        <td>The final submission is neat and contains all required components, but may have minor organizational issues.</td>
+                        <td>The submission is disorganized, hard to follow, or is missing a key component.</td>
+                        <td>The submission is messy, incomplete, and very difficult to understand.</td>
+                        <td>/ 6</td>
+                    </tr>
+                     <tr>
+                        <td colspan="5" style="text-align:right; font-weight:bold;">TOTAL</td>
+                        <td><strong>/ 32</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- CYCLE 1 SECTION -->
+        <!-- ====================================================== -->
+        <section id="cycle1" class="content-section">
+            <h3>Cycle 1: Foundations of Measurement and Conversion</h3>
+            <p><strong>Weekly Summary & Objectives:</strong> This cycle establishes the fundamentals of measurement. Students will learn to identify appropriate units, convert between systems, and apply these skills to practical contexts like currency, time, and temperature.</p>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> Whiteboard/markers, TV/computer, rulers, meter sticks, measuring tapes, sample foreign currency bills (or images), world clock website, thermometers (Celsius/Fahrenheit).</li>
+                    <li><strong>Students:</strong> Notebook, pen, calculator, ruler.</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 1: The Language of Measurement</p>
+                <p><strong>Topic:</strong> Appropriate Metric Units and Estimating Lengths.</p>
+                <p class="competency-list">determine and apply the appropriate metric units... (T); estimate and measure lengths and distances (A).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Show images of very small (ant) and very large (galaxy) objects. Ask: "How would you measure these? What units would you use?"</div>
+                <div class="activity-step"><strong>Explore (25 mins / Outdoor Activity):</strong> "Outdoor Estimation Challenge". In groups, students visit pre-identified stations outdoors. They first estimate the length/height of objects (e.g., gate width, basketball hoop height) and choose an appropriate metric unit (mm, cm, m). Then, they use measuring tools to find the actual measurement and compare.</div>
+                <div class="activity-step"><strong>Explain (15 mins):</strong> Debrief the activity. Discuss the metric system, appropriate units, and the importance of estimation.</div>
+                <div class="activity-step"><strong>Elaborate (10 mins):</strong> Students work on practice problems converting between meters, centimeters, and millimeters.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Exit Ticket: "What is a more appropriate unit to measure the thickness of your phone: millimeters or meters? Why?"</div>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 2: Conversions Across Systems</p>
+                <p><strong>Topic:</strong> Unit Conversion (Dimensional Analysis), Currency, Time, and Temperature.</p>
+                <p class="competency-list">convert measurements with different units... (A); solve problems involving the conversion of currencies (T); apply time and temperature conversions... (T).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Ask: "If a souvenir in Japan costs 1,500 Yen, is that expensive?" Show a real-time currency exchange rate.</div>
+                <div class="activity-step"><strong>Explore (10 mins):</strong> In pairs, students figure out how to convert an amount between two currencies using the displayed rates.</div>
+                <div class="activity-step"><strong>Explain (25 mins):</strong> Formalize dimensional analysis for converting units (e.g., km/hr to m/s). Apply the same logic to currency, time zone, and temperature conversions (Celsius to Fahrenheit).</div>
+                <div class="activity-step"><strong>Elaborate (15 mins):</strong> Students solve mixed word problems involving multi-step conversions.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Quick poll: "Convert 50 US Dollars to Philippine Pesos using today's exchange rate."</div>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 3: 2D Geometry of Polygons</p>
+                <p><strong>Topic:</strong> Perimeter and Area of Squares, Rectangles, and Triangles.</p>
+                <p class="competency-list">calculate the area and perimeter of residential spaces... (A).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Show a picture of a fenced-in garden. Ask: "What measurement relates to the fence? What relates to the planting space?"</div>
+                <div class="activity-step"><strong>Explore (15 mins):</strong> "Shape Shifters." Groups use a 2-meter rope to form a square, a long rectangle, and a triangle, discussing which shape encloses the most space.</div>
+                <div class="activity-step"><strong>Explain (25 mins):</strong> Formalize the formulas for perimeter and area of squares, rectangles, and triangles, including composite shapes.</div>
+                <div class="activity-step"><strong>Elaborate (10 mins):</strong> Students work on worksheet problems involving composite shapes.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Exit Ticket: "Draw two different rectangles that both have an area of 36 sq. cm. What are their perimeters?"</div>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 4: Quiz #1 & Circles</p>
+                <p><strong>Topic:</strong> Assessment of Conversions; Circumference and Area of Circles.</p>
+                <p class="competency-list">(Assessment of Cycle 1, Day 1-2 competencies); calculate the area and perimeter of residential spaces (A).</p>
+                <div class="activity-step"><strong>Evaluate (25 mins):</strong> Quiz #1 (Individual) covering metric units and conversions.</div>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> After the quiz, show a circular running track. Ask: "How do we measure one lap? How do we find the area inside?"</div>
+                <div class="activity-step"><strong>Explain (15 mins):</strong> Introduce Pi (π), radius, and diameter, and the formulas for circumference and area of circles.</div>
+                <div class="activity-step"><strong>Elaborate (15 mins):</strong> Solve problems involving sectors and composite shapes with circles.</div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- CYCLE 2 SECTION -->
+        <!-- ====================================================== -->
+        <section id="cycle2" class="content-section">
+            <h3>Cycle 2: Advanced 2D Geometry & PT#1 Introduction</h3>
+            <p><strong>Weekly Summary & Objectives:</strong> Students will tackle more complex 2D shapes, learn to use scale drawings, and begin applying these skills by starting Performance Task #1.</p>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> TV/computer, graph paper, rulers, meter sticks, measuring tapes, sample blueprints or maps.</li>
+                    <li><strong>Students:</strong> Notebook, pen, calculator, ruler, graph paper.</li>
+                </ul>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 1: Area of Oblique Triangles & Scale Drawings</p>
+                <p><strong>Topic:</strong> Area of Oblique Triangles; Using a Scale on Maps/Blueprints.</p>
+                <p class="competency-list">illustrate the area of oblique triangles (Heron's Formula, Area=½ abSinC) (A); use a scale to interpret and compare distances... (M).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Show a Google Maps image. Ask: "How does this small map represent such a large area?"</div>
+                <div class="activity-step"><strong>Explain (25 mins):</strong> Define 'scale' and demonstrate how to convert between map and real distances. Introduce formulas for the area of oblique triangles (Heron's Formula and Area = ½ abSinC).</div>
+                <div class="activity-step"><strong>Elaborate (25 mins):</strong> Students work on a two-part worksheet using a map of the school to find real distances and calculating areas of oblique triangles.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Ask students to interpret a scale on a provided blueprint and find one real-world distance.</div>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 2: Performance Task #1 Introduction</p>
+                <p><strong>Topic:</strong> Applying 2D Geometry to Landscape Design.</p>
+                <p class="competency-list">(Introduction to) estimate and measure lengths... (A); calculate area and perimeter... (A); use a scale... (M).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Show "before and after" pictures of landscaping projects.</div>
+                <div class="activity-step"><strong>Explore (15 mins / Outdoor Activity):</strong> "Site Inspection." Take the class outside to view the designated areas for the performance task.</div>
+                <div class="activity-step"><strong>Explain (20 mins):</strong> Introduce Performance Task #1: The Green Campus Initiative - Design Phase. Discuss objectives, mechanics, and rubric.</div>
+                <div class="activity-step"><strong>Elaborate (15 mins):</strong> Groups are formed and assigned their area. They begin brainstorming and planning their measurement strategy.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Each group submits a "Plan of Action" with member names and their initial measurement plan.</div>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 3: PT #1 In-Class Work Session</p>
+                <p><strong>Topic:</strong> Group Work on Landscape Design Proposal.</p>
+                <p class="competency-list">(Application of) calculate the area and perimeter... (A); use a scale... (M).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Quick check-in with each group: "What measurements do you need to take first?"</div>
+                <div class="activity-step"><strong>Explore/Elaborate (50 mins):</strong> Dedicated work session for PT#1. Part of the class can go outside to measure while others begin sketching. Teacher circulates as a facilitator.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Teacher observes group dynamics and progress, providing formative feedback.</div>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 4: Synthesis & Problem Solving</p>
+                <p><strong>Topic:</strong> Solving Complex Problems with 2D Shapes.</p>
+                <p class="competency-list">(Synthesis of all Cycle 1 & 2 competencies).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Present a complex problem: "How much would it cost to re-tile and repaint this classroom?"</div>
+                <div class="activity-step"><strong>Explore (15 mins):</strong> In groups, students brainstorm the steps and calculations needed to solve the problem.</div>
+                <div class="activity-step"><strong>Explain/Elaborate (35 mins):</strong> Teacher guides the class through solving the problem, then students work on a challenging worksheet with similar composite area and scale problems.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Final check-in on PT #1 progress and clarification of submission requirements.</div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- CYCLE 3 SECTION -->
+        <!-- ====================================================== -->
+        <section id="cycle3" class="content-section">
+            <h3>Cycle 3: 3D Geometry (Surface Area and Volume)</h3>
+            <p><strong>Weekly Summary & Objectives:</strong> Students will extend their understanding to 3D objects, focusing on calculating both surface area (the "wrapping") and volume (the "filling") for various solids.</p>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> Geometric solids models, cardboard boxes, cans, TV/computer.</li>
+                    <li><strong>Students:</strong> Notebook, pen, calculator, ruler.</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 1: Prisms and Cylinders (SA & Volume)</p>
+                <p><strong>Topic:</strong> Calculating the Surface Area and Volume of Prisms and Cylinders.</p>
+                <p class="competency-list">determine the surface area of three-dimensional objects... (A); calculate the volume and capacity of three-dimensional objects (A).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Hold up a box. Ask: "How much paper to wrap this? (Surface Area). How much sand to fill this? (Volume)."</div>
+                <div class="activity-step"><strong>Explore (15 mins):</strong> In groups, students examine a small box, sketch its "net," and discuss how to find the total area.</div>
+                <div class="activity-step"><strong>Explain (20 mins):</strong> Define surface area and volume, and derive the formulas for prisms and cylinders.</div>
+                <div class="activity-step"><strong>Elaborate (15 mins):</strong> Students solve problems finding both SA and volume of various prisms and cylinders.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Find the surface area AND volume of a given cylinder.</div>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 2: Pyramids, Cones, and Spheres (SA & Volume)</p>
+                <p><strong>Topic:</strong> Calculating the Surface Area and Volume of Pyramids, Cones, and Spheres.</p>
+                <p class="competency-list">determine the surface area of... (A); calculate the volume of... (A).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Show images of the Pyramids of Giza, an ice cream cone, and a basketball.</div>
+                <div class="activity-step"><strong>Explore (15 mins / Outdoor Activity):</strong> "Shadow Cones." On a sunny day, students use a meter stick and its shadow to form a right triangle, visualizing the relationship between height, radius, and slant height.</div>
+                <div class="activity-step"><strong>Explain (20 mins):</strong> Introduce slant height (l). Derive and explain the formulas for surface area and volume of pyramids, cones, and spheres.</div>
+                <div class="activity-step"><strong>Elaborate (15 mins):</strong> Students work on problems involving all three shapes.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Find the volume of a pyramid given its base dimensions and height.</div>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 3: Composite Solids & PT#1 Work Session</p>
+                <p><strong>Topic:</strong> Solving Problems with Composite 3D Shapes.</p>
+                <p class="competency-list">(Synthesis of) determine the surface area... (A); calculate the volume... (A).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Show a composite object like a capsule or a house with a pyramid roof.</div>
+                <div class="activity-step"><strong>Explain/Elaborate (25 mins):</strong> Model how to find the volume/SA of composite solids. Students then work on a worksheet.</div>
+                <div class="activity-step"><strong>Elaborate (25 mins):</strong> Dedicated time for groups to continue working on their PT#1 reports, focusing on scaled drawings and calculations.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Teacher circulates to provide feedback on both the worksheet and PT#1 progress.</div>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 4: Quiz #2 & PT#1 Finalization</p>
+                <p><strong>Topic:</strong> Quiz on 3D Geometry; Finalizing Landscape Design Proposal.</p>
+                <p class="competency-list">(Assessment of all Cycle 3 competencies).</p>
+                <div class="activity-step"><strong>Evaluate (25 mins):</strong> Quiz #2 (Individual) on surface area and volume of all solids.</div>
+                <div class="activity-step"><strong>Elaborate (35 mins):</strong> After the quiz, final dedicated work session for PT#1. Groups compile reports and prepare for submission.</div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- CYCLE 4 SECTION -->
+        <!-- ====================================================== -->
+        <section id="cycle4" class="content-section">
+            <h3>Cycle 4: PT#1 Submission & Introduction to Trigonometry</h3>
+            <p><strong>Weekly Summary & Objectives:</strong> This cycle begins with the submission of PT#1. The focus then shifts to introducing trigonometry, the study of triangle measurement, starting with right-angled triangles.</p>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> TV/computer, scientific calculators, clinometers (can be handmade), measuring tapes.</li>
+                    <li><strong>Students:</strong> Notebook, pen, scientific calculator, protractor, ruler, completed PT #1 outputs.</li>
+                </ul>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 1: Performance Task #1 Submission & Review</p>
+                <p><strong>Topic:</strong> Finalization and Submission of Landscape Design Proposal.</p>
+                <p class="competency-list">(Summative Assessment of) estimate and measure lengths... (A); calculate area/perimeter... (A); use a scale... (M).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Review the submission checklist and rubric.</div>
+                <div class="activity-step"><strong>Elaborate (50 mins):</strong> Final checks, compilation, and submission of Performance Task #1.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Groups complete a brief self-assessment of their project and teamwork.</div>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 2: The Trigonometric Ratios (SOH-CAH-TOA)</p>
+                <p><strong>Topic:</strong> Illustrating Sine, Cosine, and Tangent in a Right-Angled Triangle.</p>
+                <p class="competency-list">illustrate the trigonometric ratios in a right-angled triangle... (A).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Pose the question: "Without leaving the ground, how can we find the height of our school's flagpole?"</div>
+                <div class="activity-step"><strong>Explore (20 mins / Outdoor Activity):</strong> "Triangle Hunt." Students find and sketch examples of right triangles in the environment, labeling hypotenuse, opposite, and adjacent sides.</div>
+                <div class="activity-step"><strong>Explain (20 mins):</strong> Formalize the three basic trigonometric ratios: Sine (SOH), Cosine (CAH), and Tangent (TOA).</div>
+                <div class="activity-step"><strong>Elaborate (10 mins):</strong> Students practice setting up the correct ratios in various right triangles.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Exit Ticket: "For a given right triangle, write down the SOH-CAH-TOA ratios for angle A."</div>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 3: Solving for Sides and Angles</p>
+                <p><strong>Topic:</strong> Using Trig Ratios to Find Missing Sides and Angles in Right Triangles.</p>
+                <p class="competency-list">solve practical problems involving right and oblique triangles... (T).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Revisit the flagpole problem. "What information do we need to calculate the height?"</div>
+                <div class="activity-step"><strong>Explain (25 mins):</strong> Model the step-by-step process for solving for a missing side (using sin/cos/tan) and a missing angle (using inverse functions).</div>
+                <div class="activity-step"><strong>Elaborate (25 mins):</strong> Students work on practice problems solving for missing sides and angles.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Solve for x in a given right triangle problem.</div>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 4: Angles of Elevation and Depression</p>
+                <p><strong>Topic:</strong> Solving Practical Problems with Angles of Elevation and Depression.</p>
+                <p class="competency-list">solve practical problems involving right/oblique triangles, angles of elevation and depression... (T).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Show pictures taken from a plane window (depression) and looking up at a building (elevation).</div>
+                <div class="activity-step"><strong>Explain (10 mins):</strong> Formally define angle of elevation and angle of depression.</div>
+                <div class="activity-step"><strong>Explore/Elaborate (40 mins / Outdoor Activity):</strong> "Mission: Measure the Flagpole." Using handmade clinometers, groups measure the distance to the flagpole and the angle of elevation to its top. Back in the classroom, they use their data and trigonometry to calculate the height.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Draw a diagram and set up the equation for a simple word problem involving an angle of depression.</div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- CYCLE 5 SECTION -->
+        <!-- ====================================================== -->
+        <section id="cycle5" class="content-section">
+            <h3>Cycle 5: Advanced Trigonometry & PT#2 Introduction</h3>
+            <p><strong>Weekly Summary & Objectives:</strong> This cycle expands trigonometry beyond right triangles to solve any triangle using the Sine and Cosine Laws. Students are also introduced to navigation and will begin PT#2.</p>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> TV/computer, scientific calculators, compasses, maps.</li>
+                    <li><strong>Students:</strong> Notebook, pen, scientific calculator.</li>
+                </ul>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 1: The Sine Law and Cosine Law</p>
+                <p><strong>Topic:</strong> Solving Oblique Triangles using the Law of Sines and Law of Cosines.</p>
+                <p class="competency-list">solve practical problems involving right and oblique triangles... (T).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Present an oblique triangle. Ask: "SOH-CAH-TOA won't work here. How can we solve it?"</div>
+                <div class="activity-step"><strong>Explain (25 mins):</strong> Formally state the Law of Sines and Law of Cosines, explaining the conditions for using each (AAS, ASA, SSA vs. SAS, SSS).</div>
+                <div class="activity-step"><strong>Elaborate (25 mins):</strong> Students work through practice problems, first identifying which law to use, then solving.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> "Which law would you use first to solve a triangle given SAS? Why?"</div>
+            </div>
+
+            <div class="day-card">
+                <p class="day-header">Day 2: Bearings and Navigation</p>
+                <p><strong>Topic:</strong> Using Bearings in Navigation.</p>
+                <p class="competency-list">solve practical problems involving... the use of bearings in navigation (T).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Show a clip from a movie involving navigation (ship or plane). Ask: "How do they describe direction?"</div>
+                <div class="activity-step"><strong>Explore (20 mins / Outdoor Activity):</strong> "Campus Navigation Challenge." In groups, follow a set of instructions like "Walk 15 meters on a bearing of N 45° E" using a compass.</div>
+                <div class="activity-step"><strong>Explain (15 mins):</strong> Debrief the activity and formally explain how to interpret and sketch bearings.</div>
+                <div class="activity-step"><strong>Elaborate (15 mins):</strong> Solve word problems that combine bearings with the Sine and Cosine Laws.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Sketch the path described by: "S 20° W".</div>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 3: Quiz #3 & Performance Task #2 Introduction</p>
+                <p><strong>Topic:</strong> Quiz on Trigonometry; Introduction of PT #2.</p>
+                <p class="competency-list">(Assessment); (Introduction to) apply volume... (T), determine surface area... (A) for PT#2.</p>
+                <div class="activity-step"><strong>Evaluate (25 mins):</strong> Quiz #3 (Individual) covering SOH-CAH-TOA, Sine Law, and Cosine Law.</div>
+                <div class="activity-step"><strong>Explain/Elaborate (35 mins):</strong> Introduce Performance Task #2: The Green Campus Initiative - Build & Budget Phase. Explain how it builds on PT #1. Go over objectives, rubric, and timeline.</div>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 4: PT #2 In-Class Work Session</p>
+                <p><strong>Topic:</strong> Group Work on Project Build & Budget.</p>
+                <p class="competency-list">(Application of) calculate volume... (A); apply volume in cost estimation (T); solve problems involving triangles (T).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Groups share the 3D object they plan to design for their project.</div>
+                <div class="activity-step"><strong>Elaborate (50 mins):</strong> In-class work session for PT#2. Students begin core calculations (volume, SA) and research material costs online. Teacher circulates to help.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Teacher checks the progress of each group's initial calculations.</div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- CYCLE 6 SECTION -->
+        <!-- ====================================================== -->
+        <section id="cycle6" class="content-section">
+            <h3>Cycle 6: Application, Review, and Final Submission</h3>
+            <p><strong>Weekly Summary & Objectives:</strong> This final cycle is dedicated to applying and synthesizing all the quarter's concepts. Students will finalize their comprehensive project proposals (PT #2), review for the final exam, and submit their work.</p>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> TV/computer, review materials.</li>
+                    <li><strong>Students:</strong> Completed PT #2 materials, notebooks, calculators.</li>
+                </ul>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 1: PT #2 Work Session & Site Check</p>
+                <p><strong>Topic:</strong> Group Work on Project Build & Budget.</p>
+                <p class="competency-list">(Synthesis of all PT#2 related competencies).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Quick check-in: "What is the most challenging calculation for your group?"</div>
+                <div class="activity-step"><strong>Explore (20 mins / Outdoor Activity):</strong> "Final Site Check & Problem Solving." Groups go to their site one last time to re-verify a measurement or visualize their trigonometry problem.</div>
+                <div class="activity-step"><strong>Elaborate (35 mins):</strong> Back in the classroom, groups continue working on their reports and budgets.</div>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 2: PT #2 Finalization</p>
+                <p><strong>Topic:</strong> Finalizing Reports and Budgets.</p>
+                <p class="competency-list">(Synthesis of all PT#2 related competencies).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> Show an example of a concise and professional project proposal.</div>
+                <div class="activity-step"><strong>Elaborate (50 mins):</strong> Final in-class work session for PT#2. Groups finalize reports, budgets, and compile everything for submission.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Teacher conducts final checks on group progress.</div>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 3: Quarter Review</p>
+                <p><strong>Topic:</strong> Comprehensive Review of Second Quarter Topics.</p>
+                <p class="competency-list">(Review of all Second Quarter competencies).</p>
+                <div class="activity-step"><strong>Engage (5 mins):</strong> "Brain dump" activity where students write down every formula and concept they remember.</div>
+                <div class="activity-step"><strong>Explore (25 mins):</strong> "Station rotation" activity. Four stations around the room with problems from major topics (Conversions & 2D Area; SA & Volume; Right Triangle Trig; Oblique Triangle Trig).</div>
+                <div class="activity-step"><strong>Explain/Elaborate (25 mins):</strong> Teacher leads a discussion focusing on the most commonly missed problems from the stations.</div>
+                <div class="activity-step"><strong>Evaluate (5 mins):</strong> Final Q&A session.</div>
+            </div>
+            
+            <div class="day-card">
+                <p class="day-header">Day 4: Performance Task #2 Submission & Quarter Wrap-Up</p>
+                <p><strong>Topic:</strong> Final Submission and Quarter Synthesis.</p>
+                <p class="competency-list">(Summative Assessment of all applied competencies).</p>
+                <div class="activity-step"><strong>Elaborate (45 mins):</strong> Final deadline for PT#2 submission. Afterwards, facilitate a gallery walk where students can view other groups' design ideas.</div>
+                <div class="activity-step"><strong>Evaluate (15 mins):</strong> Facilitate a brief wrap-up discussion, connecting all topics from the quarter and highlighting the real-world utility of the skills learned.</div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- SUMMARY TIMELINE SECTION -- REVISED -->
+        <!-- ====================================================== -->
+        <section id="timeline" class="content-section">
+            <h3>Summary Timeline of Activities</h3>
+
+            <h4>CYCLE 1: Foundations of Measurement and Conversion</h4>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> Whiteboard/markers, TV/computer, rulers, meter sticks, measuring tapes, sample foreign currency bills (or images), world clock website, thermometers (Celsius/Fahrenheit).</li>
+                    <li><strong>Students:</strong> Notebook, pen, calculator, ruler.</li>
+                </ul>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Activities / Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Appropriate Metric Units and Estimating Lengths</td>
+                        <td>"Outdoor Estimation Challenge" to estimate and measure various objects on campus.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Unit Conversion (Dimensional Analysis), Currency, Time, and Temperature</td>
+                        <td>Practice problems on converting units, currencies, time zones, and temperatures.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Perimeter and Area of Squares, Rectangles, and Triangles</td>
+                        <td>"Shape Shifters" activity using a rope to form different polygons.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Circumference and Area of Circles</td>
+                        <td><strong>Quiz #1</strong> on metric units and conversions (length, currency, time, temperature).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>CYCLE 2: Advanced 2D Geometry & PT#1 Introduction</h4>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> TV/computer, graph paper, rulers, meter sticks, measuring tapes, sample blueprints or maps.</li>
+                    <li><strong>Students:</strong> Notebook, pen, calculator, ruler, graph paper.</li>
+                </ul>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Activities / Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Area of Oblique Triangles & Scale Drawings</td>
+                        <td>Worksheet using a map of the school to determine actual distances based on a scale.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Applying 2D Geometry to Landscape Design</td>
+                        <td><strong>Performance Task #1 Introduced.</strong> "Site Inspection" outdoor activity to view designated project areas.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Group Work on Landscape Design Proposal</td>
+                        <td>PT #1 In-Class Work Session. Groups take measurements outdoors and begin sketching designs.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Solving Complex Problems with 2D Shapes</td>
+                        <td>Guided problem-solving for composite area and scale problems. Final check-in on PT #1 progress.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>CYCLE 3: 3D Geometry (Surface Area and Volume)</h4>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> Geometric solids models, cardboard boxes, cans, TV/computer.</li>
+                    <li><strong>Students:</strong> Notebook, pen, calculator, ruler.</li>
+                </ul>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Activities / Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Surface Area and Volume of Prisms and Cylinders</td>
+                        <td>Sketching the "net" of a box to visualize surface area.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Surface Area and Volume of Pyramids, Cones, and Spheres</td>
+                        <td>"Shadow Cones" outdoor activity to visualize the relationship between height and slant height.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Solving Problems with Composite 3D Shapes</td>
+                        <td>PT #1 In-Class Work Session to create scaled drawings and finalize area/perimeter calculations.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Finalizing Landscape Design Proposal</td>
+                        <td><strong>Quiz #2</strong> on Surface Area and Volume of all solids. PT #1 Finalization Work Session.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>CYCLE 4: PT#1 Submission & Introduction to Trigonometry</h4>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> TV/computer, scientific calculators, clinometers (can be handmade), measuring tapes.</li>
+                    <li><strong>Students:</strong> Notebook, pen, scientific calculator, protractor, ruler, completed PT #1 outputs.</li>
+                </ul>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Activities / Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Finalization and Submission of Landscape Design Proposal</td>
+                        <td><strong>Performance Task #1 Submitted.</strong></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>The Trigonometric Ratios (SOH-CAH-TOA)</td>
+                        <td>"Triangle Hunt" outdoor activity to find and label right triangles in the environment.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Using Trig Ratios to Find Missing Sides and Angles</td>
+                        <td>Practice problems solving for missing sides and angles in right triangles.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Solving Practical Problems with Angles of Elevation and Depression</td>
+                        <td>"Mission: Measure the Flagpole" outdoor activity using clinometers.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>CYCLE 5: Advanced Trigonometry & PT#2 Introduction</h4>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> TV/computer, scientific calculators, compasses, maps.</li>
+                    <li><strong>Students:</strong> Notebook, pen, scientific calculator.</li>
+                </ul>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Activities / Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>The Sine Law and Cosine Law</td>
+                        <td>Practice problems identifying which law to use and solving oblique triangles.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Using Bearings in Navigation</td>
+                        <td>"Campus Navigation Challenge" outdoor activity using compasses and bearings to trace a path.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Introduction of Performance Task #2</td>
+                        <td><strong>Quiz #3</strong> on all trigonometry topics. <strong>Performance Task #2 Introduced.</strong></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Group Work on Project Build & Budget</td>
+                        <td>PT #2 In-Class Work Session. Groups begin calculations and research material costs.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>CYCLE 6: Application, Review, and Final Submission</h4>
+            <div class="materials-box">
+                <strong>Materials Needed:</strong>
+                <ul>
+                    <li><strong>Teacher:</strong> TV/computer, review materials.</li>
+                    <li><strong>Students:</strong> Completed PT #2 materials, notebooks, calculators.</li>
+                </ul>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Activities / Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Group Work on Project Build & Budget</td>
+                        <td>PT #2 Work Session & Final Site Check. Groups go outdoors to verify measurements.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Finalizing Reports and Budgets</td>
+                        <td>PT #2 Finalization Work Session. Groups compile reports and complete budget spreadsheets.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Comprehensive Review of Second Quarter Topics</td>
+                        <td>"Station rotation" review activity covering all major topics from the quarter.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Final Submission and Quarter Wrap-Up</td>
+                        <td><strong>Performance Task #2 Submitted.</strong> Gallery walk of other groups' design proposals.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- ====================================================== -->
+        <!-- LEARNING COMPETENCIES SECTION -->
+        <!-- ====================================================== -->
+        <section id="competencies" class="content-section">
+            <h3>Learning Competencies</h3>
+            <ul>
+                <li>determine and apply the appropriate metric units for various contexts, such as units for small and large quantities and scientific measurements (T)</li>
+                <li>convert measurements with different units in the same system and between different systems (A)</li>
+                <li>determine the surface area of three-dimensional objects such as prisms, pyramids, cylinders, cones, spheres, and combinations of these (A)</li>
+                <li>calculate the volume of prisms, pyramids, cylinders, cones, spheres, and combinations of these (A)</li>
+                <li>use a scale to interpret and compare distances on maps, blueprints, and sketches (M)</li>
+                <li>solve problems involving the conversion of currencies (T)</li>
+                <li>apply time conversions in various real-world scenarios such as travel planning, project management, and daily routine schedules for personal and business transactions (T)</li>
+                <li>apply temperature conversions to real-world scenarios such as recipe adjustments, weather reports, scientific experiments, storage conditions, and energy efficiency (T)</li>
+                <li>illustrate the trigonometric ratios in a right-angled triangle using a real-life object or figure (A)</li>
+                <li>illustrate the area of oblique triangles (i.e., Heron's Formula and the rule Area=Â½ abSinC) (A)</li>
+                <li>solve practical problems involving right and oblique triangles, angles of elevation and depression, and the use of bearings in navigation (T)</li>
+                <li>estimate and measure lengths and distances (e.g,, floor dimensions, measuring fabric for clothing) (A)</li>
+                <li>calculate the area and perimeter of residential spaces (e.g., room renovations, garden layouts) (A)</li>
+                <li>calculate the volume and capacity of three-dimensional objects (e.g., water tanks, rice storage containers, balik-bayan boxes) (A)</li>
+                <li>apply volume and capacity in cost estimation (e.g., amount of flour needed for bread production, paint needed for walls) (T)</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Update active link
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Show correct content section
+                    const targetId = this.getAttribute('href').substring(1);
+                    contentSections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.classList.add('active');
+                        } else {
+                            section.classList.remove('active');
+                        }
+                    });
+                    
+                    // Scroll content to top
+                    document.querySelector('.main-content').scrollTop = 0;
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
